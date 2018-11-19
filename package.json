@@ -1,0 +1,75 @@
+{
+  "name": "ngxs-forms",
+  "version": "1.0.0",
+  "description": "Handling integration of native forms with @ngxs/store",
+  "main": "index.ts",
+  "scripts": {
+    "build": "node build.js",
+    "test": "karma start",
+    "test-headless": "karma start --browsers ChromeHeadless",
+    "lint": "tslint --project .",
+    "pack-lib": "npm pack ./dist",
+    "publish-lib": "npm publish ./dist",
+    "example-install": "npm run build && npm pack ./dist && cd example-app && npm install ../ngxs-forms-$npm_package_version.tgz && cd .."
+  },
+  "author": "Kamil \"Eluzive\" Pyszczek",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mr-Eluzive/ngxs-forms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mr-Eluzive/ngxs-forms/issues"
+  },
+  "homepage": "https://github.com/Mr-Eluzive/ngxs-forms",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "ngxs",
+    "redux",
+    "forms",
+    "store"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": ">=6.1.0-rc.3",
+    "@angular/common": ">=6.1.0-rc.3",
+    "@angular/forms": ">=6.1.0-rc.3",
+    "@ngrx/store": ">=6.0.1",
+    "typescript": ">=2.8.0"
+  },
+  "devDependencies": {
+    "@angular/common": "6.1.0-rc.3",
+    "@angular/compiler": "6.1.0-rc.3",
+    "@angular/compiler-cli": "6.1.0-rc.3",
+    "@angular/core": "6.1.0-rc.3",
+    "@angular/forms": "6.1.0-rc.3",
+    "@angular/platform-browser": "6.1.0-rc.3",
+    "@angular/platform-browser-dynamic": "6.1.0-rc.3",
+    "@ngxs/store": "^3.2.0",
+    "@types/jasmine": "2.8.6",
+    "@types/node": "9.6.5",
+    "core-js": "2.5.7",
+    "jasmine-core": "2.6.4",
+    "karma": "2.0.4",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "1.1.1",
+    "karma-spec-reporter": "0.0.32",
+    "karma-typescript": "3.0.13",
+    "karma-typescript-es6-transform": "1.0.4",
+    "ngrx-forms": "^3.1.0",
+    "reflect-metadata": "0.1.12",
+    "rollup": "0.57.1",
+    "rollup-plugin-node-resolve": "3.3.0",
+    "rxjs": "6.2.1",
+    "shelljs": "0.8.1",
+    "sorcery": "0.10.0",
+    "tslint": "5.10.0",
+    "tslint-eslint-rules": "5.2.0",
+    "typescript": "2.8.3",
+    "uglify-js": "3.4.2",
+    "yargs": "11.0.0",
+    "zone.js": "0.8.26",
+    "codelyzer": "4.4.2"
+  }
+}
